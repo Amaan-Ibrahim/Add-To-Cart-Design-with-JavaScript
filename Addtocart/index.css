@@ -1,0 +1,95 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+.headingdisign{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(43, 43, 165);
+    text-shadow: 2px 4px 6px rgb(66, 66, 111);
+    
+}
+.textstyle{
+    text-shadow: 2px 0px 5px rgb(247, 247, 252);
+    font-size: 18px;
+} */
+/* .addValue{
+   
+   margin-top: 6px;
+}
+.removeValue{
+ margin-top: 6px;
+}
+.removeValue:hover{
+    cursor: pointer;
+}
+.addValue:hover{
+    cursor: pointer;
+}
+
+.inputstyle{
+    border: 1px solid gainsboro;
+    height: 40px;
+    position: relative;
+    top: 6px;
+    width: 37px;
+    outline: none;
+    background-color: rgb(249, 249, 249);
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+
+
+}
+body{
+    background: #eee;
+   
+}
+.ownnav{
+    box-shadow: 2px 2px 10px gray;
+    
+
+}
+.navlogo{
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+
+/* .img1{
+    width: 700px;
+    height: 200px;
+    float: right;
+} */
+.nav-item{
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 10px gray;
+    
+}
+.nav-item:hover{
+    /* border: 1px solid #27ae60; */
+    /* background-color: #27ae60; */
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 5px;
+    /* border-width: 50px; */
+}
+.heading{
+    text-align: center;
+    margin-top: 10px;
+}
+.fa-star{
+    font-size: 18px;
+}
+.fa-star-half{
+    font-size: 18px;
+}   
+
+
+
+

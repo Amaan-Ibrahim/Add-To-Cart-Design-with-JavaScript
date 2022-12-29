@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <title>Shopping Cart</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center mt-5  headingdisign">Shopping Cart</h2>
+        </div>
+        <table class="table  mt-5 text-center " style="background-color: white;  ">
+            <thead>
+              <tr id="getingtr" class="bg-dark text-light textstyle">
+                <th scope="col">Items</th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <th scope="row" ><img class="" src="../image492/iPhone 12.jpg" style="width: 80px;"/></th>
+                <td style="padding-top:24px ;"><b>iPhone 12</b></td>
+                <td style="padding-top:24px ;"><b>$ 849</b></td>
+                <td style="padding-top:12px ; ">
+                    <div class="btn-group mt-2" style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+                        <button type="button" onclick="valueAdd1()"  class="btn btn-outline-dark">+</button>
+                        <button type="button" id="mainValue1" class="btn btn-outline-dark">1</button>
+                        <button type="button" onclick="valueRemove1()"  class="btn btn-outline-dark">-</button>
+                      </div>
+                </td>
+                <td style="padding-top:24px ;"><b>$ 849</b></td>
+                <td style="padding-top:24px;"><i class="fa fa-remove " style="color: red;"></i></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../image492/iPhone 12 Pro Max.jpg" style="width: 65px;"/></th>
+                <td style="padding-top:24px ;"><b>iPhone 12 Pro Max</b></td>
+                <td style="padding-top:24px ;"><b>$ 1200</b></td>
+                <td style="padding-top:12px ;">
+                    <div class="btn-group mt-2  " style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+                        <button type="button" onclick="valueAdd()"  class="btn btn-outline-dark">+</button>
+                        <button type="button" id="mainValue" class="btn btn-outline-dark">1</button>
+                        <button type="button" onclick="valueRemove()"  class="btn btn-outline-dark">-</button>
+                      </div>
+                </td>               
+                 <td style="padding-top:24px ;"><b>$ 1200</b></td>
+                <td style="padding-top:24px ; "><i class="fa fa-remove " style="color: red;"></i></td>
+              </tr>
+<!-- /////////////////////////////////////////////// -->
+<tr >
+    <th scope="row" ><img class="" src="../image492/iPhone 12.jpg" style="width: 80px;"/></th>
+    <td style="padding-top:24px ;"><b>iPhone 12</b></td>
+    <td style="padding-top:24px ;"><b>$ 849</b></td>
+    <td style="padding-top:12px ; ">
+        <div class="btn-group mt-2" style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="valueAdd2()"  class="btn btn-outline-dark">+</button>
+            <button type="button" id="mainValue2" class="btn btn-outline-dark">1</button>
+            <button type="button" onclick="valueRemove2()"  class="btn btn-outline-dark">-</button>
+          </div>
+    </td>
+    <td style="padding-top:24px ;"><b>$ 849</b></td>
+    <td style="padding-top:24px;"><i class="fa fa-remove " style="color: red;"></i></td>
+  </tr>
+  <tr>
+    <th scope="row"><img src="../image492/iPhone 12 Pro Max.jpg" style="width: 65px;"/></th>
+    <td style="padding-top:24px ;"><b>iPhone 12 Pro Max</b></td>
+    <td style="padding-top:24px ;"><b>$ 1200</b></td>
+    <td style="padding-top:12px ;">
+        <div class="btn-group mt-2  " style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="valueAdd3()"  class="btn btn-outline-dark">+</button>
+            <button type="button" id="mainValue3" class="btn btn-outline-dark">1</button>
+            <button type="button" onclick="valueRemove3()"  class="btn btn-outline-dark">-</button>
+          </div>
+    </td>               
+     <td style="padding-top:24px ;"><b>$ 1200</b></td>
+    <td style="padding-top:24px ; "><i class="fa fa-remove " style="color: red;"></i></td>
+  </tr>
+              <!--///////////////////  -->
+
+              <tr >
+                <th scope="row" ><img class="" src="../image492/iPhone 12.jpg" style="width: 80px;"/></th>
+                <td style="padding-top:24px ;"><b>iPhone 12</b></td>
+                <td style="padding-top:24px ;"><b>$ 849</b></td>
+                <td style="padding-top:12px ; ">
+                    <div class="btn-group mt-2" style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+                        <button type="button" onclick="valueAdd4()"  class="btn btn-outline-dark">+</button>
+                        <button type="button" id="mainValue4" class="btn btn-outline-dark">1</button>
+                        <button type="button" onclick="valueRemove4()"  class="btn btn-outline-dark">-</button>
+                      </div>
+                </td>
+                <td style="padding-top:24px ;"><b>$ 849</b></td>
+                <td style="padding-top:24px;"><i class="fa fa-remove " style="color: red;"></i></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../image492/iPhone 12 Pro Max.jpg" style="width: 65px;"/></th>
+                <td style="padding-top:24px ;"><b>iPhone 12 Pro Max</b></td>
+                <td style="padding-top:24px ;"><b>$ 1200</b></td>
+                <td style="padding-top:12px ;">
+                    <div class="btn-group mt-2  " style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+                        <button type="button" onclick="valueAdd5()"  class="btn btn-outline-dark">+</button>
+                        <button type="button" id="mainValue5" class="btn btn-outline-dark">1</button>
+                        <button type="button" onclick="valueRemove5()"  class="btn btn-outline-dark">-</button>
+                      </div>
+                </td>               
+                 <td style="padding-top:24px ;"><b>$ 1200</b></td>
+                <td style="padding-top:24px ; "><i class="fa fa-remove " style="color: red;"></i></td>
+              </tr>
+
+<!-- ////////////////// -->
+<tr >
+    <th scope="row" ><img class="" src="../image492/iPhone 12.jpg" style="width: 80px;"/></th>
+    <td style="padding-top:24px ;"><b>iPhone 12</b></td>
+    <td style="padding-top:24px ;"><b>$ 849</b></td>
+    <td style="padding-top:12px ; ">
+        <div class="btn-group mt-2" style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="valueAdd6()"  class="btn btn-outline-dark">+</button>
+            <button type="button" id="mainValue6" class="btn btn-outline-dark">1</button>
+            <button type="button" onclick="valueRemove6()"  class="btn btn-outline-dark">-</button>
+          </div>
+    </td>
+    <td style="padding-top:24px ;"><b>$ 849</b></td>
+    <td style="padding-top:24px;"><i class="fa fa-remove " style="color: red;"></i></td>
+  </tr>
+  <tr>
+    <th scope="row"><img src="../image492/iPhone 12 Pro Max.jpg" style="width: 65px;"/></th>
+    <td style="padding-top:24px ;"><b>iPhone 12 Pro Max</b></td>
+    <td style="padding-top:24px ;"><b>$ 1200</b></td>
+    <td style="padding-top:12px ;">
+        <div class="btn-group mt-2  " style="box-shadow:2px 2px 7px rgb(80, 80, 80) ;" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="valueAdd7()"  class="btn btn-outline-dark">+</button>
+            <button type="button" id="mainValue7" class="btn btn-outline-dark">1</button>
+            <button type="button" onclick="valueRemove7()"  class="btn btn-outline-dark">-</button>
+          </div>
+    </td>               
+     <td style="padding-top:24px ;"><b>$ 1200</b></td>
+    <td style="padding-top:24px ; "><i class="fa fa-remove " style="color: red;"></i></td>
+  </tr>
+              
+            </tbody>
+          </table>
+    </div>
+
+
+
+
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+
+    //  let items = document.getElementsByTagName("").innerHTML
+    //  console.log(items)
+    const valueAdd =() =>{
+    let total = document.getElementById("mainValue").innerText
+    if (total < 5){
+        total++
+        document.getElementById("mainValue").innerText=total
+    }
+    }
+
+    const valueRemove =() =>{
+    let totalNum = document.getElementById("mainValue").innerText
+    if (totalNum > 1){
+        totalNum--
+        document.getElementById("mainValue").innerText=totalNum
+    }
+    }
+// //////////////////////////
+    const valueAdd1 =() =>{
+    let values = document.getElementById("mainValue1").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue1").innerText=values
+    }
+    }
+
+    const valueRemove1 =() =>{
+    let valuesmin = document.getElementById("mainValue1").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue1").innerText=valuesmin
+    }
+    }
+    // ///////////////////////////////////
+    const valueAdd2 =() =>{
+    let values = document.getElementById("mainValue2").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue2").innerText=values
+    }
+    }
+
+    const valueRemove2 =() =>{
+    let valuesmin = document.getElementById("mainValue2").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue2").innerText=valuesmin
+    }
+    }
+// ////////////////////////////////
+    const valueAdd3 =() =>{
+    let values = document.getElementById("mainValue3").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue3").innerText=values
+    }
+    }
+
+    const valueRemove3 =() =>{
+    let valuesmin = document.getElementById("mainValue3").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue3").innerText=valuesmin
+    }
+    }
+    // ////////////////////
+    const valueAdd4 =() =>{
+    let values = document.getElementById("mainValue4").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue4").innerText=values
+    }
+    }
+
+    const valueRemove4 =() =>{
+    let valuesmin = document.getElementById("mainValue4").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue4").innerText=valuesmin
+    }
+    }
+    // ////////////////////
+    const valueAdd5 =() =>{
+    let values = document.getElementById("mainValue5").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue5").innerText=values
+    }
+    }
+
+    const valueRemove5 =() =>{
+    let valuesmin = document.getElementById("mainValue5").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue5").innerText=valuesmin
+    }
+    }
+    // ////////////////////
+    const valueAdd6 =() =>{
+    let values = document.getElementById("mainValue6").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue6").innerText=values
+    }
+    }
+
+    const valueRemove6 =() =>{
+    let valuesmin = document.getElementById("mainValue6").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue6").innerText=valuesmin
+    }
+    }
+    // ////////////////////
+
+    const valueAdd7 =() =>{
+    let values = document.getElementById("mainValue7").innerText
+    if (values < 5){
+        values++
+        document.getElementById("mainValue7").innerText=values
+    }
+    }
+
+    const valueRemove7 =() =>{
+    let valuesmin = document.getElementById("mainValue7").innerText
+    if (valuesmin > 1){
+        valuesmin--
+        document.getElementById("mainValue7").innerText=valuesmin
+    }
+    }
+    // ////////////////////
+</script>
+</html>
